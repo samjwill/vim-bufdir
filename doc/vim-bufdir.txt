@@ -1,0 +1,10 @@
+vim-bufdir.txt
+
+COMMANDS                                        *vim-bufdir-commands*
+
+                                                *:Bufdir*
+:Bufdir {args}               Changes the working directory to the directory
+                             that the current buffer resides in, executes
+                             {args} as commands, and then returns to the
+                             original directory.
+
