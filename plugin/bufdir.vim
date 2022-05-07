@@ -48,8 +48,13 @@ function! s:handle_launchdir_command(commands)
     execute "cd" original_directory
 endfunction
 
+function! s:handle_resetlaunchdir_command()
+    let s:dir_when_launched = getcwd()
+endfunction
+
 command! -nargs=* Bufdir call <SID>handle_bufdir_command(<q-args>)
 command! -nargs=0 Chbufdir call <SID>handle_chbufdir_command()
 command! -nargs=0 Chlaunchdir call <SID>handle_chlaunchdir_command()
 command! -nargs=* Launchdir call <SID>handle_launchdir_command(<q-args>)
+command! -nargs=0 Resetlaunchdir call <SID>handle_resetlaunchdir_command()
 

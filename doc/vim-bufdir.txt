@@ -17,6 +17,12 @@ COMMANDS                                        *vim-bufdir-commands*
                              {args} as commands, and then returns to the
                              original directory.
 
+                             NOTE: If the argument commands act
+                             asynchronously, and manipulate the working
+                             directory while doing so, this may not behave as
+                             expected. In such a case, |:Chbufdir| then
+                             |:Chlaunchdir| should be used instead.
+
                              Examples: >
                                  :Bufdir :e ..
                                  :Bufdir :ter ++shell echo "I am in" && pwd
@@ -36,3 +42,8 @@ COMMANDS                                        *vim-bufdir-commands*
                              working directory when Vim was initially launched
                              (or, more technically, when this plugin was
                              loaded).
+
+                                                *:Resetlaunchdir*
+:Resetlaunchdir              Resets the launch directory stored by this plugin
+                             to the current working directory.
+
