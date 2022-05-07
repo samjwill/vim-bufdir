@@ -15,5 +15,5 @@ function! s:handle_bufdir_command(commands)
    execute "cd" original_directory
 endfunction
 
-command -nargs=+ Bufdir call <SID>handle_bufdir_command(<q-args>)
+command! -nargs=+ Bufdir call <SID>handle_bufdir_command(<q-args>)
 
