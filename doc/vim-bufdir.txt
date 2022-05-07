@@ -39,7 +39,7 @@ COMMANDS                                        *vim-bufdir-commands*
 
                                                 *:Launchdir*
 :Launchdir                   Functions like |:Bufdir|, but instead of acting
-                             on the directory of the current buffer, uses the
+:Launchdir {args}            on the directory of the current buffer, uses the
                              working directory when Vim was initially launched
                              (or, more technically, when this plugin was
                              loaded).
