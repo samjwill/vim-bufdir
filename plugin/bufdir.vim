@@ -36,7 +36,20 @@ function! s:handle_chlaunchdir_command()
     execute "cd" s:dir_when_launched
 endfunction
 
+function! s:handle_launchdir_command(commands)
+    if a:commands == ""
+        echo s:dir_when_launched
+        return
+    endif
+
+    let original_directory = getcwd()
+    execute "cd" s:dir_when_launched
+    execute a:commands
+    execute "cd" original_directory
+endfunction
+
 command! -nargs=* Bufdir call <SID>handle_bufdir_command(<q-args>)
 command! -nargs=0 Chbufdir call <SID>handle_chbufdir_command()
 command! -nargs=0 Chlaunchdir call <SID>handle_chlaunchdir_command()
+command! -nargs=* Launchdir call <SID>handle_launchdir_command(<q-args>)
 

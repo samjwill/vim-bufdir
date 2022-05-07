@@ -1,5 +1,11 @@
 vim-bufdir.txt
 
+INTRODUCTION                                    *vim-bufdir*
+
+Vim-bufdir provides a handful of convenience functions for changing Vim's
+working directory without necessitating 'autochdir'.
+
+
 COMMANDS                                        *vim-bufdir-commands*
 
                                                 *:Bufdir*
@@ -25,6 +31,8 @@ COMMANDS                                        *vim-bufdir-commands*
                              more technically, when this plugin was loaded).
 
                                                 *:Launchdir*
-:Launchdir                   Echoes the working directory when Vim was
-                             initially launched (or, more technically, when
-                             this plugin was loaded).
+:Launchdir                   Functions like |:Bufdir|, but instead of acting
+                             on the directory of the current buffer, uses the
+                             working directory when Vim was initially launched
+                             (or, more technically, when this plugin was
+                             loaded).
