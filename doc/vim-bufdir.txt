@@ -3,11 +3,18 @@ vim-bufdir.txt
 COMMANDS                                        *vim-bufdir-commands*
 
                                                 *:Bufdir*
+:Bufdir                      Echoes the directory that the current buffer
+                             resides in.
+
 :Bufdir {args}               Changes the working directory to the directory
                              that the current buffer resides in, executes
                              {args} as commands, and then returns to the
                              original directory.
 
+                             Examples: >
+                                 :Bufdir :e ..
+                                 :Bufdir :ter ++shell echo "I am in" && pwd
+<
                                                 *:Chbufdir*
 :Chbufdir                    Changes the working directory to the directory
                              that the current buffer resides in.
@@ -17,3 +24,7 @@ COMMANDS                                        *vim-bufdir-commands*
                              directory when Vim was initially launched (or,
                              more technically, when this plugin was loaded).
 
+                                                *:Launchdir*
+:Launchdir                   Echoes the working directory when Vim was
+                             initially launched (or, more technically, when
+                             this plugin was loaded).
