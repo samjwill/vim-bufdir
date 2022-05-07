@@ -1,6 +1,6 @@
 # Usage
 
-See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-bufdir.txt).
+Run `:help vim-bufdir` within Vim after installation, or see [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-bufdir.txt).
 
 # Installation
 
