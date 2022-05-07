@@ -4,8 +4,12 @@ See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-buf
 
 # Installation
 
-Using [vim-plug](https://github.com/junegunn/vim-plug) (preferred):
+#### Using [vim-plug](https://github.com/junegunn/vim-plug) (preferred):
 
     Plug 'SamuelWilliams256/vim-bufdir'
 
-Otherwise, copy the contents of the `plugin` directory to `~/.vim/plugin`, copy the contents of the `doc` directory to `~/.vim/doc/`, and run `:helptags` on the `~/.vim/doc` directory.
+#### Manual:
+
+* Copy the contents of the `plugin` directory to `~/.vim/plugin`
+* Copy the contents of the `doc` directory to `~/.vim/doc/`
+* Open Vim and run `:helptags` on the `~/.vim/doc` directory
