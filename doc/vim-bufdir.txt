@@ -3,8 +3,7 @@ vim-bufdir.txt
 INTRODUCTION                                    *vim-bufdir*
 
 Vim-bufdir provides a handful of convenience functions for changing Vim's
-working directory without necessitating the more heavy-handed approach of 
-'autochdir'.
+working directory.
 
 
 COMMANDS                                        *vim-bufdir-commands*
