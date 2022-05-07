@@ -8,3 +8,11 @@ COMMANDS                                        *vim-bufdir-commands*
                              {args} as commands, and then returns to the
                              original directory.
 
+                                                *:Chbufdir*
+:Chbufdir                    Changes the working directory to the directory
+                             that the current buffer resides in.
+
+                                                *:Chlaunchdir*
+:Chlaunchdir                 Changes the working directory to the working
+                             directory when Vim was initially launched.
+
