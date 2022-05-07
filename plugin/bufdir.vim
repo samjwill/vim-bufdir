@@ -15,6 +15,12 @@ endfunction
 
 function! s:handle_bufdir_command(commands)
     let directory_of_buffer = s:get_current_buffer_directory()
+
+    if a:commands == ""
+        echo directory_of_buffer
+        return
+    endif
+
     let original_directory = getcwd()
     execute "cd" directory_of_buffer
     execute a:commands
@@ -30,7 +36,7 @@ function! s:handle_chlaunchdir_command()
     execute "cd" s:dir_when_launched
 endfunction
 
-command! -nargs=+ Bufdir call <SID>handle_bufdir_command(<q-args>)
+command! -nargs=* Bufdir call <SID>handle_bufdir_command(<q-args>)
 command! -nargs=0 Chbufdir call <SID>handle_chbufdir_command()
 command! -nargs=0 Chlaunchdir call <SID>handle_chlaunchdir_command()
 

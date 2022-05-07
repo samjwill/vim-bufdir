@@ -14,5 +14,6 @@ COMMANDS                                        *vim-bufdir-commands*
 
                                                 *:Chlaunchdir*
 :Chlaunchdir                 Changes the working directory to the working
-                             directory when Vim was initially launched.
+                             directory when Vim was initially launched (or,
+                             more technically, when this plugin was loaded).
 
