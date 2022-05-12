@@ -24,7 +24,7 @@ COMMANDS                                        *vim-bufdir-commands*
                              NOTE: If the argument commands act
                              asynchronously, and manipulate the working
                              directory while doing so, this may not behave as
-                             expected. In such a case, |:Chbufdir| then
+                             expected. In such a case, |:Chbufdir| and
                              |:Chlaunchdir| should be used instead.
 
                                                 *:Chbufdir*
