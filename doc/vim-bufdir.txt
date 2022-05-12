@@ -47,3 +47,4 @@ COMMANDS                                        *vim-bufdir-commands*
 :Resetlaunchdir              Resets the launch directory stored by this plugin
                              to the current working directory.
 
+vim:ft=help:norl:
