@@ -6,7 +6,7 @@ See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-buf
 
 # Demo
 
-[![asciicast]()]()
+[![asciicast](https://asciinema.org/a/qBztJAIpc6IaZceXrhmjITts0.svg)](https://asciinema.org/a/qBztJAIpc6IaZceXrhmjITts0)
 
 # Installation
 
