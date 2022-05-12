@@ -1,8 +1,12 @@
-# Usage and Purpose
+# Purpose
 
-See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-bufdir.txt).
+Provides a minimal, convenient set of functions to run commands as if your working directory was elsewhere.
 
-After installation, run `:help vim-bufdir`.
+See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-bufdir.txt) for usage details, or after installation, run `:help vim-bufdir`.
+
+# Demo
+
+[![asciicast]()]()
 
 # Installation
 
@@ -12,6 +16,6 @@ After installation, run `:help vim-bufdir`.
 
 #### Manual:
 
-* Copy the contents of the `plugin` directory to `~/.vim/plugin`
+* Copy the contents of the `plugin` directory to `~/.vim/plugin` and ensure that they load on startup.
 * Copy the contents of the `doc` directory to `~/.vim/doc/`
 * Open Vim and run `:helptags` on the `~/.vim/doc` directory
