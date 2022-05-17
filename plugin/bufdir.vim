@@ -6,7 +6,7 @@ function! s:get_current_buffer_directory()
     if directory_of_buffer == ""
         let directory_of_buffer = getcwd()
     endif
-    if (!isdirectory(directory_of_buffer))
+    elseif (!isdirectory(directory_of_buffer))
         "Then it's a full filepath. Drop the filename to get the directory.
         let directory_of_buffer = expand("%:p:h")
     endif
