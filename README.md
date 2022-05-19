@@ -4,10 +4,6 @@ Provides a minimal, convenient set of functions to run commands as if your worki
 
 See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-bufdir.txt) for usage details, or after installation, run `:help vim-bufdir`.
 
-# Demo
-
-[![asciicast](https://asciinema.org/a/qBztJAIpc6IaZceXrhmjITts0.svg)](https://asciinema.org/a/qBztJAIpc6IaZceXrhmjITts0)
-
 # Installation
 
 #### Using [vim-plug](https://github.com/junegunn/vim-plug) (preferred):
