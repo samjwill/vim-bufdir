@@ -8,7 +8,7 @@ See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-buf
 
 #### Using [vim-plug](https://github.com/junegunn/vim-plug) (preferred):
 
-    Plug 'SamuelWilliams256/vim-bufdir'
+    Plug 'samjwill/vim-bufdir'
 
 #### Manual:
 
