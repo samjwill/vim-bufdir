@@ -10,7 +10,7 @@ See [here](https://github.com/SamuelWilliams256/vim-bufdir/blob/main/doc/vim-buf
 
 # Installation
 
-#### Using [vim-plug](https://github.com/junegunn/vim-plug) (preferred):
+#### Using [vim-plug](https://github.com/junegunn/vim-plug):
 
     Plug 'samjwill/vim-bufdir'
 
