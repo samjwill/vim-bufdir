@@ -3,7 +3,7 @@ let s:dir_when_launched = getcwd()
 function! s:get_current_buffer_directory()
     "See h: filename-modifiers
     let directory_of_buffer = expand("%:p")
-    if directory_of_buffer == ""
+    if directory_of_buffer == "" || directory_of_buffer[0:6] == "term://"
         let directory_of_buffer = getcwd()
     elseif (!isdirectory(directory_of_buffer))
         "Then it's a full filepath. Drop the filename to get the directory.
