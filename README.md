@@ -1,7 +1,6 @@
 # Purpose
 
-Provides a minimal, convenient set of functions to run commands as if your working directory was elsewhere.
-
+Provides a minimal, convenient set of functions to run commands as if your working directory was in the directory of the buffer holding focus.
 
 https://user-images.githubusercontent.com/25990267/170637951-8f40a747-f20b-421f-8752-1863d27366de.mp4
 
