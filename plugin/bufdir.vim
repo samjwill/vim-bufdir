@@ -3,12 +3,19 @@ let s:dir_when_launched = getcwd()
 function! s:get_current_buffer_directory()
     "See :help filename-modifiers
     let directory_of_buffer = expand("%:p")
-    if directory_of_buffer == "" || directory_of_buffer[0:6] == "term://"
+    if directory_of_buffer == ""
         let directory_of_buffer = getcwd()
     elseif (!isdirectory(directory_of_buffer))
-        "Then it's a full filepath. Drop the filename to get the directory.
+        "Then it's probably a full filepath. Drop the filename to get the directory.
         let directory_of_buffer = expand("%:p:h")
     endif
+
+    if (!isdirectory(directory_of_buffer))
+        "If it's still unable to resolve the directory, just give up.
+        "e.g.) if it's <protocol>://<remote_filepath>
+        let directory_of_buffer = getcwd()
+    endif
+
     return directory_of_buffer
 endfunction
 
